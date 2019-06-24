@@ -46,6 +46,37 @@ header a {
 .hero-image h2 {
     margin: 1rem 4%;
 }
+
+.slideshow-container {
+    color: transparent;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    display: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 45px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container:hover {
+    color: white;
+}
+
 main {
     width: 96%;
     margin: 1rem auto;
