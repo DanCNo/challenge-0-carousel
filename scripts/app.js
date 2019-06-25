@@ -2,6 +2,8 @@
 
 var slideIndex = 0;
 
+showSlides(slideIndex);
+
 function moveSlides(idx) {
   showSlides(slideIndex += idx);
 }
