@@ -1,24 +1,21 @@
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
 
-function moveSlides(n) {
-  showSlides(slideIndex += n);
+function moveSlides(idx) {
+  showSlides(slideIndex += idx);
 }
 
-function showSlides(n){
+function currentSlide(idx) {
+  showSlides(idx);
+}
 
-  var slides = document.getElementsByClassName("mySlides");
+function showSlides(idx){
 
-  if(n > slides.length) slideIndex = 1;
+  var slides = document.getElementsByClassName("image");
 
-  if(n < 1) slideIndex = slides.length;
+  slideIndex = Math.abs(idx) % 4;
 
-  for(let i = 0; i < slides.length; i++){
-    slides[i].style.display = "none";
-  }
+  slides[0].style = `background-image: url(./images/hero-image-${slideIndex}.jpg)`;
 
-  slides[slideIndex - 1].style.display = "block";
-  
 }

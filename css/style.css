@@ -51,10 +51,6 @@ header a {
     color: transparent;
 }
 
-.mySlides {
-    display: none;
-}
-
 .prev, .next {
     display: hidden;
     cursor: pointer;
